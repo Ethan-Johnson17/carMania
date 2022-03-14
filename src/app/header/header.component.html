@@ -1,1 +1,28 @@
-<p>header works!</p>
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a href="#" class="navbar-brand mx-auto">CarMania</a>
+    <button
+      class="btn navbar-toggler collapsed"
+      type="button"
+      (click)="toggle()"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <div class="bg-dark-2 d-none d-sm-none d-md-block">
+    <div class="d-flex">
+      <ul class="list-inline mx-auto justify-content-center mb-0">
+        <li class="list-inline-item" *ngFor="let route of routes">
+          <a
+            href="#"
+            class="nav-link text-white font-weight-light"
+            [routerLink]="route.path"
+            routerLinkActive="font-weight-bold text-alter"
+            [routerLinkActiveOptions]="{ exact: route.exact }"
+            >{{ route.name }}</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

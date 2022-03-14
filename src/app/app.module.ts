@@ -17,6 +17,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 // MAT
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     ArticleComponent,
     HeaderComponent,
     SidenavComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
