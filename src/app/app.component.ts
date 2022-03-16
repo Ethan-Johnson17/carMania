@@ -15,4 +15,8 @@ export class AppComponent implements OnInit {
       this.opened = data;
     });
   }
+
+  updateNav(event: boolean) {
+    this.navService.sidenavStatus.next(event);
+  }
 }
